@@ -15,12 +15,11 @@ public class TestSubmissionServiceTest {
     }
 
     @Test
-    public void testSubmitTaskWithValidInput() {
-        boolean result = service.submitTask("student123", "task456");
+public void testSubmitTaskWithValidInput() {
+    boolean result = service.submitTask("student123", "task456");
+    assertTrue("Submission should succeed for valid inputs", result);
+}
 
-        // Intentionally making this fail by expecting false instead of true
-        assertFalse("This test is intentionally failing for CI check", result);
-    }
 
     @Test
     public void testSubmitTaskWithEmptyInput() {
